@@ -3,6 +3,6 @@
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="[1.9.0]" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="[1.11.1]" />
     </ItemGroup>
 </Project>

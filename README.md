@@ -25,3 +25,16 @@ PullRequest: https://github.com/bjuraga/renovate-reproduce-nuget-pinning/pull/1/
 ## Expected behavior
 
 Renovate should respect the pinned version of `OpenTelemetry.Instrumentation.Http` in the ItemGroup for `net8.0` and should not updated it. Updating the net9.0 ItemGroup is as expected because in that ItemGroup the version is not pinned.
+
+## Somewhat of a solution
+Sadly i got banned from the Renovate project, i think for a month only. 
+
+But, if someone stumbles upon this repro, i found what i was asking for as a workaround, strangely enough in the Renovate docs. 
+
+Already confirmed it works on this repo and in AzureDevops on a self hosted Renovate bot, so here it is:
+
+https://docs.renovatebot.com/modules/manager/nuget/#disabling-updates-for-pinned-versions
+
+I personaly don't like the solution, but it works and i can justify choosing Renovate (the tool). 
+
+Good luck!
